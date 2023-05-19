@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  gap: 50px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.main-img img {
+  border: 3px solid #2398;
+  border-radius: 23px;
+}
+
+.main .main-content .heading {
+  color: rgba(13, 22, 73, 0.533);
+}
+
+.main .main-content.dark {
+  color: #eee;
+}
+
+.main .main-content p {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.main .main-content button {
+  padding: 12px 80px;
+  margin-top: 20px;
+  border-radius: 13px;
+  outline: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid #302c2c;
+  position: relative;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.main .main-content button:hover {
+  color: #eee;
+}
+
+.main .main-content button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #face30;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 13px;
+  z-index: -12;
+}
+
+.main .main-content button:hover::before {
+  width: 100%;
+}

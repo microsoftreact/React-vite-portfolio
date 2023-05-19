@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px 0px 40px;
+}
+
+.header .logo h1 {
+  color: rgb(57, 57, 137);
+}
+
+.header .links {
+  display: flex;
+  gap: 30px;
+}
+
+.header .links a {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(68, 68, 205);
+  transition: 0.5s;
+  position: relative;
+}
+
+.header .links a:hover {
+  color: rgb(43, 43, 78);
+}
+
+.header .links a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0.143rem;
+  background: rgb(68, 68, 205);
+  transition: 0.5s;
+}
+
+.header .links a:hover::before {
+  width: 100%;
+  background: rgb(43, 43, 78);
+}
+
+.header .nightmode {
+  width: 80px;
+  height: 6vh;
+  border-radius: 30px;
+  border: 1.5px solid #2398;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header .nightmode.hover {
+  border: 1.5px solid grey;
+}
+
+.header .nightmode i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.header .nightmode .circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #eee;
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header .nightmode .circle.rounded {
+  left: 40px;
+}
+
+.style {
+  color: #eee;
+}
